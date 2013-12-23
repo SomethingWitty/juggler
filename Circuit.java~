@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class Circuit
+{
+  private String name;
+  private Set<String> possibleJugglers;
+  private int coordination;
+  private int endurance;
+  private int pizzazz;
+  public Circuit(String name, int coordination, int endurance, int pizzazz)
+  {
+    this.name = name;
+    this.possibleJugglers = new HashSet<String>();
+    this.coordination = coordination;
+    this.endurance = endurance;
+    this.pizzazz = pizzazz;
+  }
+  public String getName()
+  {
+    return this.name;
+  }
+  public void addPotentialJuggler(String juggler)
+  {
+    this.possibleJugglers.add(juggler);
+  }
+  public Set<String> getPotentialJugglers()
+  {
+    return this.possibleJugglers;
+  }
+  public int getCoordination()
+  {
+    return coordination;
+  }
+  public int getEndurance()
+  {
+    return endurance;
+  }
+  public int getPizzazz()
+  {
+    return pizzazz;
+  }
+  public String toString()
+  {
+    return "name: " + name + " coordination: " + coordination + " endurance: " + endurance + " pizzazz: " + pizzazz;
+  }
+  
+}
